@@ -23,4 +23,7 @@ let str = "xyz is a good boy and also he doesn't know how to use zoom";
 console.log(str);
 console.log(typeof str);
 
-// Example of data-type
+// Example of boolean data-type
+let statement = true;
+console.log(statement);
+console.log(typeof statement);
