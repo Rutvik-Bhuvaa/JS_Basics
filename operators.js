@@ -57,3 +57,15 @@ console.log(age >= 18 && money > 400);
 
 // NOT operator
 console.log(!(age > 10));
+
+// 5. Bitwise operator
+// AND operator
+console.log(4 & 5); // answer is 4
+// OR operator
+console.log(11 | 15);
+// XOR operator
+console.log(3 ^ 4);
+// Left shift
+console.log(5 << 3);
+// Right shift
+console.log(4 >> 2);
