@@ -27,3 +27,26 @@ console.log(typeof str);
 let statement = true;
 console.log(statement);
 console.log(typeof statement);
+// Example of  undefined data-type
+let account;
+console.log(account);
+console.log(typeof account);
+
+// Example of null data-type
+let balance = null;
+console.log(balance);
+console.log(typeof balance); // typeof ==> object
+
+// Example of BigInt data-type
+let bigIntExample = 12746912891261954832n;
+console.log(bigIntExample);
+console.log(typeof bigIntExample);
+console.log(Number.MAX_SAFE_INTEGER);
+console.log(Number.MIN_SAFE_INTEGER);
+
+// If we take 64 bit long number than
+/**
+ * 1 bit ==> sign bit
+ * 11 bits ==> exponent
+ * 52 bits ==> Mantissa
+ */
