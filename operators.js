@@ -45,3 +45,15 @@ console.log(undefined <= 0); // false
 
 // NaN is never equal to NaN
 console.log(NaN == NaN);
+
+// 4. Logical operator
+let age = 18;
+let money = 420;
+// AND operator
+console.log(age >= 18 && money > 400);
+
+// OR operator
+console.log(age >= 18 && money > 400);
+
+// NOT operator
+console.log(!(age > 10));
