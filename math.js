@@ -13,3 +13,6 @@ console.log(num.toPrecision(2));
 console.log(num.toExponential(2));
 console.log(num.toString());
 console.log(typeof num.toString());
+
+// Math function in javascript
+console.log(Math.E);
