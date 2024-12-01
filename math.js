@@ -16,3 +16,13 @@ console.log(typeof num.toString());
 
 // Math function in javascript
 console.log(Math.E);
+console.log(Math.PI);
+console.log(Math.LN10);
+console.log(Math.random() * 10);
+console.log(Math.floor(Math.random() * 10));
+let number = 23.2;
+console.log(Math.floor(number));
+console.log(Math.ceil(number));
+
+// min = 40, max = 50
+console.log(Math.floor(Math.random(max - min + 1) + min));
