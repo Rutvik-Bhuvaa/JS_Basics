@@ -76,3 +76,23 @@ const arr2d = [
   [7, 8, 9],
 ];
 console.log(arr2d);
+console.log(arr2d[0][2]);
+
+// 3D array
+
+const arr3d = [
+  [1, 2, [4, 5]],
+  [6, 7, 8],
+];
+console.log(arr3d[0][2][0]);
+
+// flat operator => to convert into 1d array
+const arr_new = arr2d.flat(Infinity);
+console.log(arr_new);
+
+let abc = [2, 1, 4, 1];
+console.log(Array.isArray(abc));
+
+// Another way to create an array but it is not recommended
+const arrNew = new Array(2, 4, 6, 8);
+console.log(arrNew);
