@@ -40,3 +40,30 @@ let personOne = new People("RutvikBhuvaa", 22, "Male");
 let personTwo = new People("ShrutikBhuva", 18, "Male");
 console.log(personTwo);
 console.log(personOne);
+
+// Common methods for objects
+let people = {
+  name: "xyz",
+  gender: "Male",
+  age: 43,
+  accountBalance: 3432,
+};
+
+// to access keys and values of the object
+const arr = Object.keys(people);
+const arrValues = Object.values(people);
+
+const arrOne = Object.entries(people);
+console.log(arr);
+console.log(arrValues);
+console.log(arrOne);
+
+// Assign use case  ==> it creates the copy of the object
+const objOne = { a: 1, b: 2 };
+const objTwo = { c: 1, d: 2 };
+
+const objThree = Object.assign({}, objOne, objTwo);
+console.log(objThree);
+
+const objFour = { ...objOne, ...objTwo };
+console.log(objFour);
