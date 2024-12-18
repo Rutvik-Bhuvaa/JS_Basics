@@ -58,7 +58,7 @@ console.log(arr);
 console.log(arrValues);
 console.log(arrOne);
 
-// Assign use case  ==> it creates the copy of the object
+// Assign & spread operator use case  ==> it creates the copy of the object but this object have nested object then it follows the rule of by reference
 const objOne = { a: 1, b: 2 };
 const objTwo = { c: 1, d: 2 };
 
@@ -67,3 +67,33 @@ console.log(objThree);
 
 const objFour = { ...objOne, ...objTwo };
 console.log(objFour);
+
+// Destructuring of an object
+let obj1 = {
+  name: "xyz",
+  money: 420,
+  balance: 2333,
+  age: 32,
+};
+const { name, balance, age } = obj1;
+console.log(name, balance, age);
+
+const arr1 = [1, 3, 4, 6, 7, 2];
+const [first, second] = arr1;
+const [third, fourth, , fifth] = arr1;
+console.log(first, second);
+console.log(first, second, third);
+
+const obj2 = {
+  name: "rutvikbhuvaa",
+  age: 21,
+  address: {
+    pincode: 233564,
+    city: "Gurugram",
+  },
+};
+
+const {
+  address: { pincode, city },
+} = obj2;
+console.log(pincode);
