@@ -58,7 +58,7 @@ console.log(arr);
 console.log(arrValues);
 console.log(arrOne);
 
-// Assign & spread operator use case  ==> it creates the copy of the object but this object have nested object then it follows the rule of by reference
+// Assign & spread operator use case  ==> it creates the deep copy of the object but if this object have nested object then it follows the rule of by reference that means it works as shallow copy for nested part
 const objOne = { a: 1, b: 2 };
 const objTwo = { c: 1, d: 2 };
 
@@ -76,6 +76,8 @@ let obj1 = {
   age: 32,
 };
 const { name, balance, age } = obj1;
+const { name: fullName, balance: amount, age: Umar } = obj1;
+console.log(fullName, amount, Umar);
 console.log(name, balance, age);
 
 const arr1 = [1, 3, 4, 6, 7, 2];
@@ -87,6 +89,7 @@ console.log(first, second, third);
 const obj2 = {
   name: "rutvikbhuvaa",
   age: 21,
+  arr: [30, 40, 50, 60, 70],
   address: {
     pincode: 233564,
     city: "Gurugram",
@@ -96,4 +99,22 @@ const obj2 = {
 const {
   address: { pincode, city },
 } = obj2;
-console.log(pincode);
+const { address: adds } = obj2;
+const {
+  arr: [firstElement],
+} = obj2;
+console.log(firstElement);
+console.log(pincode, city);
+console.log(adds);
+
+let user = {
+  name: "rutvikbhuvaa",
+  amount: 330,
+  greet: function () {
+    console.log("hi there");
+  },
+};
+
+user.greet();
+
+// prototype ==>
