@@ -116,5 +116,3 @@ let user = {
 };
 
 user.greet();
-
-// prototype ==>
