@@ -18,3 +18,17 @@ while (i < 5) {
   console.log(i);
   i++;
 }
+
+const obj = {
+  name: "John",
+  age: 20,
+  amount: 100,
+  city: "New York",
+};
+
+const keys = Object.keys(obj);
+
+for (let i = 0; i < keys.length; i++) {
+  console.log(obj[keys[i]]);
+  console.log(keys[i]);
+}
