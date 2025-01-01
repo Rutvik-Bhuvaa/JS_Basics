@@ -48,3 +48,12 @@ const answer = students.filter((student) => student.marks > 50);
 const anotherAnswer = students.filter(({ marks }) => marks > 50);
 console.log(anotherAnswer);
 console.log(answer);
+
+// map  ==> It takes callback function as a argument and return new array
+/**
+ * filter ==> only filter the value
+ * map ==> modify the value but it return new array whereas forEach return nothing
+ */
+const arrTwo = [1, 2, 4, 5];
+const resultMap = arrTwo.map((num) => num * num);
+console.log(resultMap);
