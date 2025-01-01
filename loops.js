@@ -117,3 +117,15 @@ console.log(Object.getOwnPropertyDescriptor(Object.prototype, "toString"));
 // ==> So, basically for in loop is not printing the properties of the Object.prototype because the enumerable property of the Object.prototype is false
 
 // Note: for in loop never applies on array because array is also an object so we can add some properties to the array and then we can use for in loop on that array but array keys are index which is number but due to object it also print that index even after index is not a number
+
+// for of loop ==> Never apply on object
+
+let arr = [11, 22, 33, 44, 55, 66, 77, 88, 99, 100];
+for (let value of arr) {
+  console.log(value);
+}
+
+let str = "xyz is good boy";
+for (let value of str) {
+  console.log(value);
+}
