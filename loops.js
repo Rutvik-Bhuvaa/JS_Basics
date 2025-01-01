@@ -129,3 +129,11 @@ let str = "xyz is good boy";
 for (let value of str) {
   console.log(value);
 }
+
+// forEach loop
+
+let arrTwo = [11, 22, 33, 44, 55, 66, 77, 88, 99, 100];
+arrTwo.forEach((num) => console.log(num));
+arrTwo.forEach((num, index) => console.log(num, index));
+arrTwo.forEach((num, index, arr) => (arr[index] = num * 2));
+console.log(arrTwo);
