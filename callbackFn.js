@@ -57,3 +57,29 @@ console.log(answer);
 const arrTwo = [1, 2, 4, 5];
 const resultMap = arrTwo.map((num) => num * num);
 console.log(resultMap);
+
+// reduce  ==> It takes callback function as a argument and return single value
+const arrThree = [10, 20, 30, 40, 50];
+const finalResult = arrThree.reduce((acc, curr) => {
+  return acc + curr;
+}, 0);
+console.log(finalResult);
+
+const fruits = [
+  "orange",
+  "apple",
+  "banana",
+  "orange",
+  "apple",
+  "orange",
+  "grapes",
+];
+const resultReduce = fruits.reduce((acc, curr) => {
+  if (acc.hasOwnProperty(curr)) {
+    acc[curr]++;
+  } else {
+    acc[curr] = 1;
+  }
+  return acc;
+}, {});
+console.log(resultReduce);
